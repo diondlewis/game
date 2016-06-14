@@ -15,19 +15,19 @@ var Enemy = function() {
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
 Enemy.prototype.update = function(dt) {
-    // You should multiply any movement by the dt parameter
-    // which will ensure the game runs at the same speed for
-    // all computers.
-    if (this.x < 450) { // This if statement checks the condition of whether the bugs are off the screen or not.
+	// You should multiply any movement by the dt parameter
+	// which will ensure the game runs at the same speed for
+	// all computers.
+	if (this.x < 450) { // This if statement checks the condition of whether the bugs are off the screen or not.
    		this.x += 3 + this.speed * dt;
    	}
    		else { // this else statement resets the bugs to their original position once they go off the screen and gives them a random speed.
    			this.x = -100;
    			this.speed = getRandomIntInclusive();
    		}
-    // You have to use x instead of y, because the movement of
-    // enemy is horizontally and not vertically.
-    this.checkCollision(player);//This calls check collision function to apply to each instance of the bugs.
+   	// You have to use x instead of y, because the movement of
+   	// enemy is horizontally and not vertically.
+   	this.checkCollision(player);//This calls check collision function to apply to each instance of the bugs.
 };
 
 // Draw the enemy on the screen, required method for game
