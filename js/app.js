@@ -18,7 +18,7 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
-   	if (this.x < 450) { // This if statement checks the condition of whether the bugs are off the screen or not.
+    if (this.x < 450) { // This if statement checks the condition of whether the bugs are off the screen or not.
    		this.x += 3 + this.speed * dt;
    	}
    		else { // this else statement resets the bugs to their original position once they go off the screen and gives them a random speed.
@@ -64,8 +64,8 @@ var Player = function(x, y, width, height) {
 Player.prototype.update = function() {
 	this.x = this.x;
 	this.y = this.y;
-	if (player.y < 0) { // this statement checks to see if the player has reached the water
-		player.reset(); // then resets the player, after he reaches the water. I plan add more to this later
+	if (this.y < 0) { // this statement checks to see if the player has reached the water
+		this.reset(); // then resets the player, after he reaches the water. I plan add more to this later
 	}
 };
 
@@ -93,8 +93,8 @@ Player.prototype.handleInput = function(allowedKeys) {
 
 // This function is just so that something will happen when the player reaches the water, it resets the player to the starting position.
 Player.prototype.gameWin = function() {
-	if (player.y < 100) {
-		player.reset();
+	if (this.y < 100) {
+		this.reset();
 	}
 };
 
