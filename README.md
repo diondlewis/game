@@ -1,13 +1,13 @@
 Classic Arcade Game
 ===============================
 
-This game is inspired by the classic game Frogger and is a project for Udacity nanodegree program.
+This game is inspired by the classic game Frogger and is a project for the Udacity Front-End Web Development Nanodegree.
 
 ---
 
 ## About the game
 
-The objective of the game is to reach the water while dodging any the bugs. The bugs will vary in speed as the traverse across the screen.
+The objective of the game is to reach the water while dodging the bugs. The bugs will vary in speed as they traverse across the screen.
 If the player gets hit by a bug the game will reset.
 
 ## Running Instructions
