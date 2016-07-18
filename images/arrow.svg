@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 283.23425 36.514278" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient id="linearGradient11462">
+<stop offset="0" stop-color="#80ff26"/>
+<stop offset="1" stop-color="#2c9600"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(-1.673203,0,0,-1.147595,-296.4722,-123.4769)" gradientUnits="userSpaceOnUse" id="linearGradient9478" x1="-451.30542" x2="-434.33966" xlink:href="#linearGradient11462" y1="-228.70355" y2="-246.57704"/>
+<linearGradient gradientTransform="matrix(0,1.673203,-1.147595,0,-237.2859,-125.731)" gradientUnits="userSpaceOnUse" id="linearGradient9375" x1="155.51448" x2="173.43343" xlink:href="#linearGradient11462" y1="-459.7464" y2="-440.7139"/>
+<linearGradient gradientTransform="matrix(1.673203,0,0,1.147595,-203.141,-119.8205)" gradientUnits="userSpaceOnUse" id="linearGradient9351" x1="248.07172" x2="230.57993" xlink:href="#linearGradient11462" y1="224.94089" y2="244.73628"/>
+<linearGradient gradientTransform="matrix(0,-1.673203,1.147595,0,-269.0057,-124.9573)" gradientUnits="userSpaceOnUse" id="linearGradient9447" x1="-155.74126" x2="-171.93723" xlink:href="#linearGradient11462" y1="558.79907" y2="541.26917"/>
+</defs>
+<g transform="translate(-179.04255,-131.64248)">
+<path d="m440.50591,162.91289v-5.34834h20.89588v-15.29877h-20.89588v-5.37943l-13.8684,13.02882 13.8684,12.99772z" fill="url(#linearGradient9478)" stroke="#116b1c" stroke-linejoin="round" stroke-width="1.75"/>
+<path d="m292.55296,153.41336h-5.34834v-20.89588h-15.29877v20.89588h-5.37943l13.02882,13.8684 12.99772-13.8684z" fill="url(#linearGradient9375)" stroke="#116b1c" stroke-linejoin="round" stroke-width="1.75"/>
+<path d="m200.81343,136.88634v5.34834h-20.89588v15.29877h20.89588v5.37945l13.8684-13.02883-13.8684-12.99773z" fill="url(#linearGradient9351)" stroke="#116b1c" stroke-linejoin="round" stroke-width="1.75"/>
+<path d="m348.7664,146.38588h5.34833v20.89588h15.29877v-20.89588h5.37944l-13.02882-13.8684-12.99772,13.8684z" fill="url(#linearGradient9447)" stroke="#116b1c" stroke-linejoin="round" stroke-width="1.75"/>
+</g>
+</svg>
