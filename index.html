@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Classic Arcade Game: Frogger Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="framework/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="framework/js/jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="framework/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+    $(window).load(function(){
+        $('#game').modal('show');
+    });
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="col-md-12 col-vp-pull text-center">
+			<h1>Classic Arcade Game: Frogger Clone</h1>
+			<h3>By Dion Lewis</h3>
+		</div>
+		<div>
+		    <script src="js/resources.js"></script>
+		    <script src="js/app.js"></script>
+		    <script src="js/engine.js"></script>
+		 </div>
+		<br>
+		<br>
+	</div>
+	<div>
+		<audio class="center-block" id="music" controls autoplay="autoplay" loop="loop">
+  		<source src="sounds/gavotte.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+		</audio>
+		<br>
+		<br>
+	</div>
+
+		<!-- Classic Arcade Game Modal -->
+	<div class="modal fade" id="game" tabindex="-1" role="dialog" aria-labelledby="arcade" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title" id="arcade">Game Instructions</h1>
+				</div>
+				<div class="modal-body">
+				<h4>Try to reach the water while avoiding being hit by the bugs.</h4>
+					<figure>
+						<img class="img-responsive center-block" src="images/char-boy.png" alt="arcade game">
+						<img class="img-responsive center-block" src="images/arrow.svg" alt="arcade game">
+					</figure>
+				</div>
+				<h4>To play the game use the arrow keys to move.</h4>
+				<div class="modal-footer">
+				<button type="button" class="center-block btn btn-success btn-lg" data-dismiss="modal">Play Game</button>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- Classic Arcade Game Lose Modal -->
+	<div class="modal fade" id="lose" tabindex="-1" role="dialog" aria-labelledby="arcade" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-body">
+				<h1>You Lose</h1>
+					<figure>
+						<img class="img-responsive center-block" src="images/char-boy.png" alt="arcade game">
+					</figure>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="center-block btn btn-warning btn-lg" data-dismiss="modal">Try Again</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<!-- Classic Arcade Game Win Modal -->
+	<div class="modal fade" id="win" tabindex="-1" role="dialog" aria-labelledby="arcade" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title" id="arcade">Classic Arcade Game: Frogger Clone</h1>
+				</div>
+				<div class="modal-body">
+				<h1>You Win!</h1>
+					<figure>
+						<img class="img-responsive center-block" src="images/char-boy.png" alt="arcade game">
+					</figure>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="center-block btn btn-success btn-lg"  data-dismiss="modal">Play Again</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
