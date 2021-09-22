@@ -1,3 +1,27 @@
+var click1 = new Audio();
+if (click1.canPlayType('audio/mpeg;')) {
+    click1.src = 'sounds/click1.mp3';
+} else if (click1.canPlayType('audio/ogg;')) {
+    click1.src = 'sounds/click1.ogg';
+} else {
+    click1.src = 'sounds/click1.wav';
+}
+
+var bugSound = new Audio();
+if (bugSound.canPlayType('audio/mpeg;')) {
+    bugSound.src = 'sounds/boink.mp3';
+} else if (bugSound.canPlayType('audio/ogg;')) {
+    bugSound.src = 'sounds/boink.ogg';
+} else {
+    bugSound.src = 'sounds/boink.wav';
+}
+
+var loseSound = new Audio();
+if (loseSound.canPlayType('audio/mpeg;')) {
+    loseSound.src = 'sounds/moonlight.mp3';
+}
+
+
 // Enemies our player must avoid
 var Enemy = function() {
     // Variables applied to each of our instances go here,
@@ -42,6 +66,9 @@ Enemy.prototype.checkCollision = function(player) {
         player.y < this.y + 50 &&
         70 + player.y > this.y) {
         player.reset(); // if bugs collide with player, the player will reset to the original position.
+        $('#lose').modal()
+        bugSound.play();
+        //loseSound.play();
     }
 };
 
@@ -65,6 +92,7 @@ Player.prototype.update = function() {
 	this.x = this.x;
 	this.y = this.y;
 	if (this.y < 0) { // this statement checks to see if the player has reached the water
+    $('#win').modal()
 		this.reset(); // then resets the player, after he reaches the water. I plan add more to this later
 	}
 };
@@ -79,6 +107,7 @@ Player.prototype.handleInput = function(allowedKeys) {
 // These if statements determine how far in each direction the player will move around the board and stops the player before he goes off the canvas
 	if (allowedKeys === 'left' && this.x > 0) {
 		this.x = this.x - 100;
+
 	}
 	if (allowedKeys === 'right' && this.x < 400) {
 		this.x = this.x + 100;
@@ -92,11 +121,12 @@ Player.prototype.handleInput = function(allowedKeys) {
 };
 
 // This function is just so that something will happen when the player reaches the water, it resets the player to the starting position.
-Player.prototype.gameWin = function() {
-	if (this.y < 100) {
-		this.reset();
-	}
-};
+// Player.prototype.gameWin = function() {
+	// if (this.y < 100) {
+		// this.reset();
+
+	// }
+// };
 
 // This function provides a random number that I'm using to vary the speed of the bugs.
 function getRandomIntInclusive(min, max) {
@@ -134,4 +164,5 @@ document.addEventListener('keyup', function(e) {
     };
 
     player.handleInput(allowedKeys[e.keyCode]);
+    click1.play();
 });
